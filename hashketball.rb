@@ -169,7 +169,7 @@ end
 
 def team_colors(team)
   
-  game_hash.each do |team, team_details|
+  game_hash.values.each do |team_info|
     if team_details[:name] == team_name
       colors = team_details[:colors].flatten
     end
