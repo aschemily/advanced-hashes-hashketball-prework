@@ -189,8 +189,7 @@ game_hash.values.each do |team_info|
     end
   end
 end
-  
-end
+
 
 # def player_stats(player_name)
 #   player_stats = {}
