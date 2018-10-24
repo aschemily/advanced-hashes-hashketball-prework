@@ -195,6 +195,7 @@ game_hash.each do |team, team_details|
       end
       end
   end
+end
   player_numbers_list
 end
 
