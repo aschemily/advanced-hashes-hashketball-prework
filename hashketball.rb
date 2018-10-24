@@ -186,8 +186,8 @@ def player_numbers(team)
 game_hash.values.each do |team_info|
   if team_info.has_value?(team)
     return team_info[:players].map {|player|player[:number]}
+    end
   end
-end
 end
   player_numbers_list
 end
