@@ -170,10 +170,8 @@ end
 def team_colors(team)
   
   game_hash.values.each do |team_info|
-    if team_details[:name] == team_name
-      colors = team_details[:colors].flatten
-    end
-  end
+    if team_info.has_value?(team) 
+      return team_info[:colors].map(&:capitalize)
   colors
 end
 
