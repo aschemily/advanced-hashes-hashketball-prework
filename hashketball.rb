@@ -198,3 +198,6 @@ game_hash.each do |team, team_details|
   player_numbers_list
 end
 
+def player_stats(player_name)
+  
+end
