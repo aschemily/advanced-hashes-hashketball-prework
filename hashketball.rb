@@ -199,29 +199,29 @@ end
   player_numbers_list
 end
 
-# def player_stats(player_name)
-#   player_stats = {}
-#   game_hash.each do |team, team_details|
-#     team_details[:players].each do |stats|
-#       if stats[:name] == player_name
-#         stats.delete(:name)
-#         player_stats = stats
-#       end
-#     end
-#   end
-#   player_stats
-# end
+def player_stats(player_name)
+  player_stats = {}
+  game_hash.each do |team, team_details|
+    team_details[:players].each do |stats|
+      if stats[:name] == player_name
+        stats.delete(:name)
+        player_stats = stats
+      end
+    end
+  end
+  player_stats
+end
 
-# def big_shoe_rebouds
-#   big_shoe_guy = 0 
-#   rebounds = 0 
-#   game_hash.each do |team, team_details|
-#     team_details[:players].each do |stats|
-#       if stats[:shoe] > big_shoe_guy
-#         big_shoe_guy = stats[:shoe]
-#         rebounds = stats[:rebounds]
-#       end
-#     end
-#   end
-#   rebounds
-# end
+def big_shoe_rebouds
+  big_shoe_guy = 0 
+  rebounds = 0 
+  game_hash.each do |team, team_details|
+    team_details[:players].each do |stats|
+      if stats[:shoe] > big_shoe_guy
+        big_shoe_guy = stats[:shoe]
+        rebounds = stats[:rebounds]
+      end
+    end
+  end
+  rebounds
+end
