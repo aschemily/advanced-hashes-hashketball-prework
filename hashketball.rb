@@ -153,7 +153,7 @@ def num_points_scored(name,num_points_scored)
 answer
 end
 
-def shoe_size(name,shoe_size)
+def shoe_size(name)
   answer = nil
    game.each do |team, shoe|
     players_array = shoe[:players]
