@@ -215,5 +215,5 @@ def big_shoe_rebouds
       end
     end
   end
-  return play_rebounds
+  return player_rebounds
 end
