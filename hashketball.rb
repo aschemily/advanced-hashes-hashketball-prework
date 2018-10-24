@@ -209,7 +209,7 @@ def big_shoe_rebouds
   player_rebounds = 0 
   game_hash.values.each do |team_info|
     team_info[:players].each do |player|
-      if player[:shoe] > big_shoe_guy
+      if player[:shoe] > biggest_shoe
         big_shoe_guy = stats[:shoe]
         rebounds = stats[:rebounds]
       end
