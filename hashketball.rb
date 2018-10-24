@@ -142,7 +142,7 @@ end
 
 def num_points_scored(name)
   answer = nil
-  game.each do |team, points|
+  game_hash.each do |team, points|
     players_array = points[:players]
     players_array.each do |player_points|
       if player_points[:name] == name
@@ -155,7 +155,7 @@ end
 
 def shoe_size(name)
   answer = nil
-   game.each do |team, shoe|
+   game_hash.each do |team, shoe|
     players_array = shoe[:players]
     players_array.each do |player_shoe|
       if player_shoe[:name] == name
