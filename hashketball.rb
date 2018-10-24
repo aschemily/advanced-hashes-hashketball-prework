@@ -191,9 +191,9 @@ game_hash.each do |team, team_details|
       player.each do |key, value|
         if key == :number
           player_numbers_list << value 
-        end 
-      end
-      end
+          end 
+        end
+    end
   end
 end
   player_numbers_list
