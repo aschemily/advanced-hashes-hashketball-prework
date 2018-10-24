@@ -140,7 +140,7 @@ team_data.each do |attribute, data|
   end
 end
 
-def num_points_scored(name,num_points_scored)
+def num_points_scored(name)
   answer = nil
   game.each do |team, points|
     players_array = points[:players]
